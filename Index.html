@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Nome - Currículo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeDown 1s ease;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 38px;
+      color: #38bdf8;
+    }
+
+    .subtitle {
+      color: #94a3b8;
+      margin-top: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .section {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 14px;
+      margin-top: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      animation: fadeUp 1s ease;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5f5;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVO */
+    @media(max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ANIMAÇÕES */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <img src="https://via.placeholder.com/150" class="profile-pic">
+      <h1>Seu Nome</h1>
+      <p class="subtitle">Sua profissão • Seu objetivo</p>
+
+      <a href="#" class="btn">📄 Baixar Currículo</a>
+    </header>
+
+    <div class="section">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou profissional da área de [sua área], com experiência em [habilidades].
+        Tenho foco em gerar resultados, resolver problemas e evoluir constantemente.
+      </p>
+      <p>
+        Me destaco por ser <strong>proativo</strong>, <strong>analítico</strong> e
+        orientado a resultados.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Experiência</h2>
+      <ul>
+        <li><strong>Cargo</strong> — descrição + resultado</li>
+        <li><strong>Cargo</strong> — impacto gerado</li>
+        <li><strong>Cargo</strong> — conquista relevante</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <div class="section">
+        <h2>Formação</h2>
+        <ul>
+          <li>Curso — Instituição</li>
+          <li>Especialização — Instituição</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Comunicação</li>
+          <li>Resolução de problemas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section contact">
+      <h2>Contato</h2>
+      <p>Email: seuemail@email.com</p>
+      <p>LinkedIn: <a href="#">seu-link</a></p>
+      <p>Portfólio: <a href="#">seu-site</a></p>
+    </div>
+
+    <footer>
+      © 2026 - Seu Nome
+    </footer>
+
+  </div>
+
+</body>
+</html>
